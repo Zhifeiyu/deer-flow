@@ -49,6 +49,9 @@ export const enUS: Translations = {
     exportAsMarkdown: "Export as Markdown",
     exportAsJSON: "Export as JSON",
     exportSuccess: "Conversation exported",
+    image: "Image",
+    attachment: "Attachment",
+    remove: "Remove",
   },
 
   // Welcome
@@ -432,5 +435,56 @@ export const enUS: Translations = {
       emptyTitle: "Acknowledgements",
       emptyDescription: "Credits and acknowledgements will show here.",
     },
+  },
+
+  // Landing page
+  landing: {
+    heroWords: [
+      "Deep Research",
+      "Collect Data",
+      "Analyze Data",
+      "Generate Webpages",
+      "Vibe Coding",
+      "Generate Slides",
+      "Generate Images",
+      "Generate Podcasts",
+      "Generate Videos",
+      "Generate Songs",
+      "Organize Emails",
+      "Do Anything",
+      "Learn Anything",
+    ],
+    heroWithDeerFlow: "with DeerFlow",
+    heroDescription:
+      "An open-source SuperAgent harness that researches, codes, and creates. With\nthe help of sandboxes, memories, tools, skills and subagents, it handles\ndifferent levels of tasks that could take minutes to hours.",
+    heroGetStarted: "Get Started with 2.0",
+    whatsNewTitle: "Whats New in DeerFlow 2.0",
+    whatsNewSubtitle:
+      "DeerFlow is now evolving from a Deep Research agent into a full-stack Super Agent",
+    whatsNewContextEngineering: "Context Engineering",
+    whatsNewMemory: "Long/Short-term Memory",
+    whatsNewMemoryDescription: "Now the agent can better understand you",
+    whatsNewLongTask: "Long Task Running",
+    whatsNewPlanning: "Planning and Sub-tasking",
+    whatsNewPlanningDescription:
+      "Plans ahead, reasons through complexity, then executes sequentially or in parallel",
+    whatsNewExtensible: "Extensible",
+    whatsNewSkillsTools: "Skills and Tools",
+    whatsNewSkillsToolsDescription:
+      "Plug, play, or even swap built-in tools. Build the agent you want.",
+    whatsNewPersistent: "Persistent",
+    whatsNewSandbox: "Sandbox with File System",
+    whatsNewSandboxDescription: "Read, write, run — like a real computer",
+    whatsNewFlexible: "Flexible",
+    whatsNewMultiModel: "Multi-Model Support",
+    whatsNewMultiModelDescription: "Doubao, DeepSeek, OpenAI, Gemini, etc.",
+    whatsNewFree: "Free",
+    whatsNewOpenSource: "Open Source",
+    whatsNewOpenSourceDescription: "MIT License, self-hosted, full control",
+    skillsSectionTitle: "Agent Skills",
+    skillsSectionSubtitle:
+      "Agent Skills are loaded progressively — only what's needed, when it's needed.\nExtend DeerFlow with your own skill files, or use our built-in library.",
+    caseStudiesTitle: "Case Studies",
+    caseStudiesSubtitle: "See how DeerFlow is used in the wild",
   },
 };

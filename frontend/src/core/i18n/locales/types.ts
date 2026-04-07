@@ -38,6 +38,9 @@ export interface Translations {
     exportAsMarkdown: string;
     exportAsJSON: string;
     exportSuccess: string;
+    image: string;
+    attachment: string;
+    remove: string;
   };
 
   // Welcome
@@ -356,5 +359,37 @@ export interface Translations {
       emptyTitle: string;
       emptyDescription: string;
     };
+  };
+
+  // Landing page
+  landing: {
+    heroWords: string[];
+    heroWithDeerFlow: string;
+    heroDescription: string;
+    heroGetStarted: string;
+    whatsNewTitle: string;
+    whatsNewSubtitle: string;
+    whatsNewContextEngineering: string;
+    whatsNewMemory: string;
+    whatsNewMemoryDescription: string;
+    whatsNewLongTask: string;
+    whatsNewPlanning: string;
+    whatsNewPlanningDescription: string;
+    whatsNewExtensible: string;
+    whatsNewSkillsTools: string;
+    whatsNewSkillsToolsDescription: string;
+    whatsNewPersistent: string;
+    whatsNewSandbox: string;
+    whatsNewSandboxDescription: string;
+    whatsNewFlexible: string;
+    whatsNewMultiModel: string;
+    whatsNewMultiModelDescription: string;
+    whatsNewFree: string;
+    whatsNewOpenSource: string;
+    whatsNewOpenSourceDescription: string;
+    skillsSectionTitle: string;
+    skillsSectionSubtitle: string;
+    caseStudiesTitle: string;
+    caseStudiesSubtitle: string;
   };
 }

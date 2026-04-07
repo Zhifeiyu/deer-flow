@@ -49,6 +49,9 @@ export const zhCN: Translations = {
     exportAsMarkdown: "导出为 Markdown",
     exportAsJSON: "导出为 JSON",
     exportSuccess: "对话已导出",
+    image: "图片",
+    attachment: "附件",
+    remove: "移除",
   },
 
   // Welcome
@@ -414,5 +417,55 @@ export const zhCN: Translations = {
       emptyTitle: "致谢",
       emptyDescription: "相关的致谢信息会展示在这里。",
     },
+  },
+
+  // Landing page
+  landing: {
+    heroWords: [
+      "深度研究",
+      "收集数据",
+      "分析数据",
+      "生成网页",
+      "氛围编程",
+      "生成幻灯片",
+      "生成图片",
+      "生成播客",
+      "生成视频",
+      "生成音乐",
+      "整理邮件",
+      "无所不能",
+      "学无止境",
+    ],
+    heroWithDeerFlow: "用 DeerFlow",
+    heroDescription:
+      "一个开源的超级智能体，集研究、编码和创作于一体。\n借助沙箱、记忆、工具、技能和子代理，\n它能处理从几分钟到数小时不等的各种任务。",
+    heroGetStarted: "立即体验 2.0",
+    whatsNewTitle: "DeerFlow 2.0 新特性",
+    whatsNewSubtitle: "DeerFlow 正在从深度研究代理进化为全栈超级智能体",
+    whatsNewContextEngineering: "上下文工程",
+    whatsNewMemory: "长期/短期记忆",
+    whatsNewMemoryDescription: "让智能体更好地理解你",
+    whatsNewLongTask: "长时间任务执行",
+    whatsNewPlanning: "规划与子任务分解",
+    whatsNewPlanningDescription:
+      "先规划、再推理、后执行，支持串行或并行处理",
+    whatsNewExtensible: "可扩展",
+    whatsNewSkillsTools: "技能与工具",
+    whatsNewSkillsToolsDescription:
+      "即插即用，自由替换内置工具，构建你想要的智能体",
+    whatsNewPersistent: "持久化",
+    whatsNewSandbox: "沙箱与文件系统",
+    whatsNewSandboxDescription: "读取、写入、运行——如同一台真正的计算机",
+    whatsNewFlexible: "灵活",
+    whatsNewMultiModel: "多模型支持",
+    whatsNewMultiModelDescription: "豆包、DeepSeek、OpenAI、Gemini 等",
+    whatsNewFree: "免费",
+    whatsNewOpenSource: "开源",
+    whatsNewOpenSourceDescription: "MIT 许可证，自部署，完全掌控",
+    skillsSectionTitle: "智能体技能",
+    skillsSectionSubtitle:
+      "智能体技能按需渐进加载——只在需要时加载需要的内容。\n用你自己的技能文件扩展 DeerFlow，或使用内置技能库。",
+    caseStudiesTitle: "案例展示",
+    caseStudiesSubtitle: "看看 DeerFlow 在实际场景中的应用",
   },
 };
