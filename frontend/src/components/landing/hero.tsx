@@ -46,10 +46,10 @@ export function Hero({ className }: { className?: string }) {
           className="mt-8 scale-105 text-center text-2xl text-shadow-sm"
           style={{ color: "rgb(184,184,192)" }}
         >
-          {t.landing.heroDescription.split("\n").map((line, i) => (
+          {t.landing.heroDescription.split("\n").map((line, i, arr) => (
             <span key={i}>
               {line}
-              {i < t.landing.heroDescription.split("\n").length - 1 && <br />}
+              {i < arr.length - 1 && <br />}
             </span>
           ))}
         </p>

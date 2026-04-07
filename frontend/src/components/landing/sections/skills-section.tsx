@@ -14,13 +14,10 @@ export function SkillsSection({ className }: { className?: string }) {
       title={t.landing.skillsSectionTitle}
       subtitle={
         <div>
-          {t.landing.skillsSectionSubtitle.split("\n").map((line, i) => (
+          {t.landing.skillsSectionSubtitle.split("\n").map((line, i, arr) => (
             <span key={i}>
               {line}
-              {i <
-                t.landing.skillsSectionSubtitle.split("\n").length - 1 && (
-                <br />
-              )}
+              {i < arr.length - 1 && <br />}
             </span>
           ))}
         </div>
