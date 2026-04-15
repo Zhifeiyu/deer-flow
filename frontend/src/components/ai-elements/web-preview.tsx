@@ -18,6 +18,8 @@ import { ChevronDownIcon } from "lucide-react";
 import type { ComponentProps, ReactNode } from "react";
 import { createContext, useContext, useEffect, useState } from "react";
 
+import { useI18n } from "@/core/i18n/hooks";
+
 export type WebPreviewContextValue = {
   url: string;
   setUrl: (url: string) => void;
@@ -176,6 +178,7 @@ export const WebPreviewBody = ({
   ...props
 }: WebPreviewBodyProps) => {
   const { url } = useWebPreview();
+  const { t } = useI18n();
 
   return (
     <div className="flex-1">
@@ -183,7 +186,7 @@ export const WebPreviewBody = ({
         className={cn("size-full", className)}
         sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation"
         src={(src ?? url) || undefined}
-        title="Preview"
+        title={t.common.preview}
         {...props}
       />
       {loading}

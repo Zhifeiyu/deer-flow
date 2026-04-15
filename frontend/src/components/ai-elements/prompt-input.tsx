@@ -72,6 +72,8 @@ import {
   useState,
 } from "react";
 
+import { useI18n } from "@/core/i18n/hooks";
+
 // ============================================================================
 // Provider Context & Types
 // ============================================================================
@@ -289,6 +291,7 @@ export function PromptInputAttachment({
   ...props
 }: PromptInputAttachmentProps) {
   const attachments = usePromptInputAttachments();
+  const { t } = useI18n();
 
   const filename = data.filename || "";
 
@@ -296,7 +299,8 @@ export function PromptInputAttachment({
     data.mediaType?.startsWith("image/") && data.url ? "image" : "file";
   const isImage = mediaType === "image";
 
-  const attachmentLabel = filename || (isImage ? "Image" : "Attachment");
+  const attachmentLabel =
+    filename || (isImage ? t.common.image : t.common.attachment);
 
   return (
     <PromptInputHoverCard>
@@ -359,7 +363,7 @@ export function PromptInputAttachment({
           <div className="flex items-center gap-2.5">
             <div className="min-w-0 flex-1 space-y-1 px-0.5">
               <h4 className="truncate text-sm leading-none font-semibold">
-                {filename || (isImage ? "Image" : "Attachment")}
+                {attachmentLabel}
               </h4>
               {data.mediaType && (
                 <p className="text-muted-foreground truncate font-mono text-xs">
